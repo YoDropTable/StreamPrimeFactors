@@ -30,15 +30,7 @@ public class HW3  {
 	// Read a collection of prime numbers
     // Use input redirection
     // Needed to change scanner to read from file
-    Scanner scn;
-    try{
-        //Reads Input File oneMillionPrimes.txt
-        scn = new Scanner(new File("oneMillionPrimes.txt"));
-    } catch (FileNotFoundException e){
-        //If the file is not found it will exti the program.
-        System.out.println("Prime File not found");
-        return;
-    }
+    Scanner scn = new Scanner(System.in);
     
     //Reading Each Line from File
     System.out.println("Reading from file...");
